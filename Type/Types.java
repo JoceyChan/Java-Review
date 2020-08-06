@@ -30,6 +30,8 @@ public class Types {
          System.out.println(message.toLowerCase()); 
          System.out.println(message.trim()); // gets rid of white spaces 
 
+         String text = "Hello \"Joce\""; // to add "" in a string then add the back slash "\"word\""
+         System.out.println(text);
 
     }
 }
