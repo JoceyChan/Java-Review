@@ -27,6 +27,9 @@ public class Types {
          System.out.println(message.length());
          System.out.println(message.indexOf("e"));
          System.out.println(message.replace( "!", "*")); // System.out.println(message.replace( target, replacement)); 
+         System.out.println(message.toLowerCase()); 
+         System.out.println(message.trim()); // gets rid of white spaces 
+
 
     }
 }
