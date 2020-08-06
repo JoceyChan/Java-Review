@@ -1,6 +1,6 @@
 import java.util.Date;
 
-public class RefrenceType {
+public class Types {
     public static void main(String[] args){
        byte age = 30; 
         Date now = new Date(); // variable is an instance of the class Date
