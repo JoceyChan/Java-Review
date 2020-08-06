@@ -1,4 +1,5 @@
 import java.util.Date;
+import java.awt.*;
 
 public class Types {
     public static void main(String[] args){
@@ -9,9 +10,12 @@ public class Types {
         System.out.println(now); //type sout tab,  gives us System.out.println
 
          //Primitative types
-         Byte x = 1; 
-         Byte y = x;
-         x = 2;
-         System.out.println(y);
+         Byte a = 1; 
+         Byte b = a;
+         a = 2;
+         System.out.println(b);
+
+         Point point1 = new Point( x:1, y:1);
+         Point point2 =  point1;
     }
 }
