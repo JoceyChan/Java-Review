@@ -15,9 +15,18 @@ public class Types {
          a = 2;
          System.out.println(b);
 
-         Point point1 = new Point(); //not sure why Point(x: 1, y: 1); doesnt work
+         Point point1 = new Point(1, 1); //Point point1 = new Point(x, y);
          Point point2 =  point1;
          point1.x = 2;
          System.out.println(point2);
+
+         //String types
+         String message = "Hello World" + "!!"; //initialized short hand
+         System.out.println(message.endsWith("!!"));
+         System.out.println(message.startsWith("!!"));
+         System.out.println(message.length());
+         System.out.println(message.indexOf("e"));
+         System.out.println(message.replace( "!", "*")); // System.out.println(message.replace( target, replacement)); 
+
     }
 }
