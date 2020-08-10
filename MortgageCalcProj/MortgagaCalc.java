@@ -5,8 +5,9 @@ public class MortgagaCalc {
         Scanner scan = new Scanner(System.in);
         System.out.print("Principle: ");
         int p = scan.nextInt();
+
         System.out.print("Annual Interest Rate: ");
-        double r = scan.nextDouble();
+        float r = scan.nextFloat();
         System.out.print("Number of payments: ");
         double n = scan.nextDouble();
 
