@@ -10,12 +10,12 @@ public class FizzBuzz {
 
     int n = scan.nextInt();
 
-    if (n % 5 == 0)
-        System.out.println("Fizz");
+    if ((n % 5 == 0) && (n % 3 == 0)) // make sure to put the specifics first
+    System.out.println("Fizz Buzz");
+    else if (n % 5 == 0)
+    System.out.println("Fizz"); 
     else if (n % 3 == 0) // "%" divisible operator
-        System.out.println("Buzz");
-    else if ((n % 5 == 0) && (n % 3 == 0))
-        System.out.println("Fizz Buzz");
+    System.out.println("Buzz");
     else
         System.out.println(n);
         
