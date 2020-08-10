@@ -3,11 +3,11 @@ public class MortgagaCalc {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
         System.out.print("Principle: ");
-        double p = scan.nextInt();
+        double p = scan.nextDouble();
         System.out.print("Annual Interest Rate: ");
-        double r = scan.nextInt();
+        double r = scan.nextDouble();
         System.out.print("Number of payments: ");
-        double n = scan.nextInt();
+        double n = scan.nextDouble();
 
         double a = 1 + r;
         double top = r * Math.pow(a, n);
