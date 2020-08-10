@@ -9,9 +9,16 @@ public class FizzBuzz {
     System.out.print("Number: ");
 
     int n = scan.nextInt();
+    if (n % 5 == 0){ // does not look good to have repeated conditions
+        if (n % 3 == 0)
+            System.out.println("Fizz Buzz");
+        else
+            System.out.println(n);
 
-    
-       
+    }
+    else if (n % 3 == 0) // "%" divisible operator
+    System.out.println("Buzz");
+     
     // if ((n % 5 == 0) && (n % 3 == 0)) // make sure to put the specifics first
     //     System.out.println("Fizz Buzz");
     // else if (n % 5 == 0)
