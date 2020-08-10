@@ -1,4 +1,3 @@
-package ArraysPractice.Constants;
 
 public class Const {
     public static void main(String[] args){
