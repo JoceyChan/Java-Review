@@ -19,7 +19,7 @@ public class Cast {
 
         String i = "1.1";
         double j = Double.parseDouble(i) + 2;
-        System.out.println(x);
+        System.out.println(j);
     }
     
 }
