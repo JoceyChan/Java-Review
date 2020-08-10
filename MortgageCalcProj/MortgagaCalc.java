@@ -4,8 +4,9 @@ import java.util.Scanner;
 public class MortgagaCalc {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
+        //set these to not have magic numbers
         final byte months_in_year = 12;
-        final byte percent = 100;
+        final byte percent = 100; 
 
         System.out.print("Principle: ");
         int p = scan.nextInt();
