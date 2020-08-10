@@ -6,10 +6,12 @@ public class Scanners {
         byte age = scanner. nextByte();
         System.out.println("You are " + age );
 
+        Scanner keys = new Scanner(System.in);
         System.out.print("Name: ");
-        String name = scanner.nextLine(); //for string you don't need .nextString(); it is just .next();
+        String name = keys.nextLine(); //for string you don't need .nextString(); it is just .next();
         System.out.println("You are " + name); //Only prints out the first name and not the last name, when inputed both names
+        keys.close();
         // the printed words are called tokens so in order to print out both tokens we need to call the next method twice NOT IDEAL 
-        // therefore use .nectLine()
+        // therefore use .nextLine() 
     }
 }
