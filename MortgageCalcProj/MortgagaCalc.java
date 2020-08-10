@@ -15,8 +15,8 @@ public class MortgagaCalc {
             System.out.print("Principle: ");
             principle = scan.nextInt();
             if(principle >= 1000 && principle <- 1_000_000){
-                break;
             System.out.println("Enter a value between 1000 and 1000000");
+                break;
             }
         }
         float rate;
@@ -30,10 +30,16 @@ public class MortgagaCalc {
             }
             System.out.println("Enter a value between 1 and 30");
         }
-
-        System.out.print("Period (Years): ");
-        byte years = scan.nextByte(); //use byte because the max we want to support is the number 30 
-        int numberOfPayments = years * months_in_year;
+        byte years;
+        int numberOfPayments;
+        while(true){
+            System.out.print("Period (Years): ");
+            years = scan.nextByte(); //use byte because the max we want to support is the number 30 
+            if(years >- 1 && years <= 30){
+                numberOfPayments = years * months_in_year;
+                break;
+            }
+        }
 
         double addingRate = 1 + monthlyInterest;
         double top = monthlyInterest * Math.pow(addingRate, numberOfPayments);
