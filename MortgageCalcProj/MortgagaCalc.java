@@ -13,5 +13,9 @@ public class MortgagaCalc {
         double top = r * Math.pow(a, n);
         System.out.println(a);
         System.out.println(top);
+
+        double bottom = Math.pow(a, n) - 1;
+        System.out.println(bottom);
+
     }
 }
