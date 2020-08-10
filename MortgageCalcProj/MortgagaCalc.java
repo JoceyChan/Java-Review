@@ -9,9 +9,11 @@ public class MortgagaCalc {
         final byte months_in_year = 12;
         final byte percent = 100; 
 
+        int principle;
+
         while(true){
             System.out.print("Principle: ");
-            int principle = scan.nextInt();
+            principle = scan.nextInt();
             if(principle >= 1000 && principle <- 1_000_000){
                 break;
             System.out.println("Enter a value between 1000 and 1000000");
