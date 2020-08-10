@@ -6,7 +6,7 @@ public class FizzBuzz {
     // if not divisble the print number
     
     Scanner scan = new Scanner(System.in);
-    System.out.println("Number: ");
+    System.out.print("Number: ");
 
     int n = scan.nextInt();
 
