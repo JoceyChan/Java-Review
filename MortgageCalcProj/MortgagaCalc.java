@@ -14,7 +14,8 @@ public class MortgagaCalc {
         float r = scan.nextFloat();
 
         System.out.print("Period (Years): ");
-        float n = scan.nextFloat();
+        byte years = scan.nextByte();
+        int n = years * months_in_year;
 
         float monthlyInterest = r / percent / months_in_year;
         double a = 1 + year;
