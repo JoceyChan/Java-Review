@@ -20,6 +20,14 @@ public class Cast {
         String i = "1.1";
         double j = Double.parseDouble(i) + 2;
         System.out.println(j);
+
+        int result = Math.round(1.1F); // gets a double or float and rounds 
+        System.out.println(result);
+
+        int result2 = Math.max(1, 2); // gets the greates num from the given 
+        int mins = Math.min(6, 8); // gets the minimum from the given 
+        System.out.println(result2);
+        System.out.println(mins);
     }
     
 }
