@@ -21,7 +21,7 @@ public class Main {
         System.out.println(b);
 
         int c = (10*3) + 4;
-        System.out.println(c);
+        System.out.println(c); //(), */, +-
 
     }
     
