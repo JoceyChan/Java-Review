@@ -8,7 +8,7 @@ public class Cast {
         System.out.println(y);
 
         double a = 1.1;
-        double b = a + 2;
+        int b = (int) a + 2; //explicit casting when the type is compatable 
         System.out.println(a);
     }
     
