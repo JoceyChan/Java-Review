@@ -12,7 +12,7 @@ public class FizzBuzz {
 
     if (n % 5 == 0)
         System.out.println("Fizz");
-    else if (n % 3 == 0)
+    else if (n % 3 == 0) // "%" divisible operator
         System.out.println("Buzz");
     else if ((n % 5 == 0) && (n % 3 == 0))
         System.out.println("Fizz Buzz");
