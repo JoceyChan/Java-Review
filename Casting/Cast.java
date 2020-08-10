@@ -26,8 +26,10 @@ public class Cast {
 
         int result2 = Math.max(1, 2); // gets the greates num from the given 
         int mins = Math.min(6, 8); // gets the minimum from the given 
+        double rand = Math.random();
         System.out.println(result2);
         System.out.println(mins);
+        System.out.println(rand);
     }
     
 }
