@@ -20,6 +20,9 @@ public class Main {
         b /= 2; // Augmented or Compound operators
         System.out.println(b);
 
+        int c = (10*3) + 4;
+        System.out.println(c);
+
     }
     
 }
