@@ -9,21 +9,20 @@ public class MortgagaCalc {
         final byte percent = 100; 
 
         System.out.print("Principle: ");
-        int p = scan.nextInt();
+        int principle = scan.nextInt();
 
         System.out.print("Annual Interest Rate: ");
-        float r = scan.nextFloat();
-        float monthlyInterest = r / percent / months_in_year;
+        float rate = scan.nextFloat();
+        float monthlyInterest = rate / percent / months_in_year;
 
         System.out.print("Period (Years): ");
-        byte years = scan.nextByte();
-        int n = years * months_in_year;
+        byte years = scan.nextByte(); //use byte because the max we want to support is the number 30 
+        int numberOfPayments = years * months_in_year;
 
-        double a = 1 + monthlyInterest;
-        double period = n;
-        double top = monthlyInterest * Math.pow(a, period);
-        double bottom = Math.pow(a, period) - 1;
-        double together = p * (top/bottom);
+        double addingRate = 1 + monthlyInterest;
+        double top = monthlyInterest * Math.pow(addingRate, numberOfPayments);
+        double bottom = Math.pow(addingRate, numberOfPayments) - 1;
+        double together = principle * (top/bottom);
 
         String togetherFormated = NumberFormat.getCurrencyInstance().format(together);
         System.out.println("Mortgage Payment: " + togetherFormated);
