@@ -19,11 +19,17 @@ public class MortgagaCalc {
             System.out.println("Enter a value between 1000 and 1000000");
             }
         }
-        
-
-        System.out.print("Annual Interest Rate: ");
-        float rate = scan.nextFloat();
-        float monthlyInterest = rate / percent / months_in_year;
+        float rate;
+        float monthlyInterest;
+        while (true){
+            System.out.print("Annual Interest Rate: ");
+            rate = scan.nextFloat();
+            if(rate >= 1 && rate <= 30){
+                monthlyInterest = rate / percent / months_in_year;
+                break;
+            }
+            System.out.println("Enter a value between 1 and 30");
+        }
 
         System.out.print("Period (Years): ");
         byte years = scan.nextByte(); //use byte because the max we want to support is the number 30 
