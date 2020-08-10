@@ -8,8 +8,6 @@ public class MortgagaCalc {
         int r = scan.nextInt();
         System.out.print("Number of payments: ");
         int n = scan.nextInt();
-        System.out.print("Mortgage: ");
-        int m = scan.nextInt();
 
     }
 }
