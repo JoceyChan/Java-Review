@@ -4,7 +4,7 @@ public class MortgagaCalc {
         Scanner scan = new Scanner(System.in);
         System.out.print("Principle: ");
         double p = scan.nextInt();
-        System.out.print("Monthly interest rate: ");
+        System.out.print("Annual Interest Rate: ");
         double r = scan.nextInt();
         System.out.print("Number of payments: ");
         double n = scan.nextInt();
@@ -17,5 +17,7 @@ public class MortgagaCalc {
         double bottom = Math.pow(a, n) - 1;
         System.out.println(bottom);
 
+        double together = p * (top/bottom);
+        System.out.println("Mortgage Payment: " + together);
     }
 }
