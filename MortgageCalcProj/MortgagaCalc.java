@@ -9,8 +9,15 @@ public class MortgagaCalc {
         final byte months_in_year = 12;
         final byte percent = 100; 
 
-        System.out.print("Principle: ");
-        int principle = scan.nextInt();
+        while(true){
+            System.out.print("Principle: ");
+            int principle = scan.nextInt();
+            if(principle >= 1000 && principle <- 1_000_000){
+                break;
+            System.out.println("Enter a value between 1000 and 1000000");
+            }
+        }
+        
 
         System.out.print("Annual Interest Rate: ");
         float rate = scan.nextFloat();
