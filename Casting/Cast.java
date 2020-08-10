@@ -26,10 +26,12 @@ public class Cast {
 
         int result2 = Math.max(1, 2); // gets the greates num from the given 
         int mins = Math.min(6, 8); // gets the minimum from the given 
-        double rand = Math.random();
+        double rand = Math.random() * 100; //gives you a random decimal
+        //if we do in int then it would go as this:
+        // int rand = (int) Math.round(Math.random() * 100); //casting
         System.out.println(result2);
         System.out.println(mins);
-        System.out.println(rand);
+        System.out.println(Math.round(rand));
     }
     
 }
