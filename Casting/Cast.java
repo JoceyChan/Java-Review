@@ -10,6 +10,12 @@ public class Cast {
         double a = 1.1;
         int b = (int) a + 2; //explicit casting when the type is compatable 
         System.out.println(a);
+
+        String c = "1"; // not compatable so can't have a string and an int 
+        //Integer.parseInt(); // int
+        //int d = (int) c + 2;
+        int d = Integer.parseInt(c) + 2;
+        System.out.println(d);  
     }
     
 }
