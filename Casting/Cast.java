@@ -29,6 +29,8 @@ public class Cast {
         double rand = Math.random() * 100; //gives you a random decimal
         //if we do in int then it would go as this:
         // int rand = (int) Math.round(Math.random() * 100); //casting
+        // if we don['t want the rounding but want an int then we do this:
+        // int rand = (int)(Math.random() * 100);
         System.out.println(result2);
         System.out.println(mins);
         System.out.println(Math.round(rand));
