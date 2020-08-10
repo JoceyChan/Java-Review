@@ -16,6 +16,10 @@ public class Cast {
         //int d = (int) c + 2;
         int d = Integer.parseInt(c) + 2;
         System.out.println(d);  
+
+        String i = "1.1";
+        double j = Double.parseDouble(i) + 2;
+        System.out.println(x);
     }
     
 }
