@@ -1,5 +1,3 @@
-package SinglyLinkedList;
-
 public class EmployeeLinkedList {
     private EmployeeNode head;
 
@@ -10,10 +8,10 @@ public class EmployeeLinkedList {
     }
     public void print(){
         EmployeeNode current = head;
-        System.out.println("HEAD -> ");
+        System.out.print("HEAD -> ");
         while(current != null){
             System.out.println(current);
-            System.out.println(" -> ");
+            System.out.print(" -> ");
             current = current.getNext();
         }
         System.out.println("null");

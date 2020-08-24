@@ -1,5 +1,3 @@
-package SinglyLinkedList;
-
 public class EmployeeNode { // this is like class Node{}
     private Employee employee; 
     private EmployeeNode next;

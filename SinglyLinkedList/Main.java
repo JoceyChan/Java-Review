@@ -11,5 +11,6 @@ public class Main {
         list.addToFront(marySmith);
         list.addToFront(mikeWilson);
 
+        list.print();
     }
 }
