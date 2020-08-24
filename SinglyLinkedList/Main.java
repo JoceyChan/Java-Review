@@ -7,7 +7,7 @@ public class Main {
 
         EmployeeLinkedList list = new EmployeeLinkedList();
         System.out.println(list.isEmpty());
-        
+
         list.addToFront(janeJones);
         list.addToFront(johnDoe);
         list.addToFront(marySmith);
@@ -15,5 +15,10 @@ public class Main {
 
         System.out.println(list.getSize());
         list.print();
+
+        list.removeFromFront(); //removes head from Mike to Mary
+        System.out.println(list.getSize());
+        list.print();
+
     }
 }
