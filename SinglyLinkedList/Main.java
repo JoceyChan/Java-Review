@@ -6,6 +6,8 @@ public class Main {
         Employee mikeWilson = new Employee("Mike", "Wilson", 3245);
 
         EmployeeLinkedList list = new EmployeeLinkedList();
+        System.out.println(list.isEmpty());
+        
         list.addToFront(janeJones);
         list.addToFront(johnDoe);
         list.addToFront(marySmith);
