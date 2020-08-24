@@ -8,6 +8,16 @@ public class EmployeeLinkedList {
         head = node; 
         size++; //increments and counts
     }
+    public EmployeeNode removeFromFront(){
+        if(isEmpty()){
+            return null;
+        }
+        EmployeeNode removedNode = head;
+        head = head.getNext();
+        size--;
+        removedNode.setNext(null);
+        return removedNode;
+    }
     public int getSize(){
         return size;
     }
