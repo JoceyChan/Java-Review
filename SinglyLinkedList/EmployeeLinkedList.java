@@ -11,6 +11,9 @@ public class EmployeeLinkedList {
     public int getSize(){
         return size;
     }
+    public boolean isEmpty(){
+        return head == null;
+    }
     public void print(){
         EmployeeNode current = head;
         System.out.print("HEAD -> ");
