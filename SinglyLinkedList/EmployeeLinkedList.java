@@ -1,10 +1,15 @@
 public class EmployeeLinkedList {
     private EmployeeNode head;
+    private int size; //variable to keep count
 
     public void addToFront(Employee employee){
         EmployeeNode node = new EmployeeNode(employee);
         node.setNext(head);
         head = node; 
+        size++; //increments and counts
+    }
+    public int getSize(){
+        return size;
     }
     public void print(){
         EmployeeNode current = head;

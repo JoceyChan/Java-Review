@@ -11,6 +11,7 @@ public class Main {
         list.addToFront(marySmith);
         list.addToFront(mikeWilson);
 
+        System.out.println(list.getSize());
         list.print();
     }
 }
