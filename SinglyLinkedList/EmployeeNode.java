@@ -19,4 +19,7 @@ public class EmployeeNode { // this is like class Node{}
     public void setNext(EmployeeNode next){
         this.next = next;
     }
+    public String toString(){
+        return employee.toString();
+    }
 }
